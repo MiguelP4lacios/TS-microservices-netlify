@@ -102,4 +102,5 @@ export { handler };
 ```
 
 - Prueba de nuevo tu API para que tenga el formato correcto, cada vez que guardes el archivo el API local se actualizará
-- haz commit de tus cambios y haz push para que comience el proceso de despliegue en Netlify
+- Haz commit de tus cambios y haz push para que comience el proceso de despliegue en Netlify
+- Verifica en la consola que el proceso de despliegue se completa y usa la URL que te da Netlify para verificar tu API publicamente
