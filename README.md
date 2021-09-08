@@ -10,7 +10,7 @@ Para implementar microservicios usando Netlify haremos uso de [Netlify functions
 - Crea un repositorio en tu cuenta de GitHub
 - Crea una cuenta en [https://www.netlify.com/](Netlify)
 - Conecta tu repositorio de GitHub con Netlify, dentro de netlify haz click al boton de `New site from Git`
-- Sigue las instrucciones en netlify para conectar tu repositorio y tu branch principal, normalmente el nombre del branch será `main`. Asegurate que Netlify tiene acceso a tu repositorio configurando la [https://github.com/apps/netlify/installations/new](aplicación de Netlify en GitHub).
+- Sigue las instrucciones en Netlify para conectar tu repositorio y tu branch principal, normalmente el nombre del branch será `main`. Asegurate que Netlify tiene acceso a tu repositorio configurando la [https://github.com/apps/netlify/installations/new](aplicación de Netlify en GitHub)
 - En este laboratorio no desplegaremos ninguna aplicación de front end, por lo que puedes dejar las opciones de Build vacias y desplegar tu sitio
 - Instala `yarn` si aún no lo tienes instalado
 - Inicializa las dependencias usando el comando `yarn init`
@@ -50,7 +50,7 @@ node_modules
 ```
 
 - Dentro de la carpeta crea un archivo llamado `dogos.ts`, usaremos este archivo para devolver imagenes de perros aleatoriamente conectandonos con otro API externo
-- Crea la función que procesará los requests HTTP tus usuarios
+- Crea la función que procesará los requests HTTP tus usuarios dentro del archivo `dogos.ts`
 
 ```typescript
 import { Handler } from "@netlify/functions";
@@ -67,10 +67,10 @@ export { handler };
 
 - Instala la libreria netlify-cli `yarn add -D netlify-cli`, esto nos permitirá probar las funciones localmente antes de desplegarlas
 - Autoriza la consola de Netlify usando el comando `yarn netlify login`
-- Vincula tu repositorio local con Netlify usando el comando `yarn netlify link`
+- Vincula tu repositorio local con Netlify usando el comando `yarn netlify link`, revisa el nombre de tu aplicación en Netlify
 - Corre el comando `yarn netlify dev` para probar tu función localmente
 - En tu navegador se abrirá una ventana con la URL local para pruebas, adiciona a esta URL `/api/dogos` para verificar que tu funcion responde correctamente
-- Usando la libreria `node-fetch` haremos un request a una libreria externa que retornará imagenes aleatorias de perros.
+- Usando la libreria `node-fetch` haremos un request a una libreria externa que retornará imagenes aleatorias de perros
 - Instala la libreria usando el comando `yarn add node-fetch`
 - Ajusta el código para llamar al API externo y retornar las primeras 10 urls de las imagenes
 
