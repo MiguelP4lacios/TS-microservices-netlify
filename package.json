@@ -1,0 +1,16 @@
+{
+  "name": "TS-microservices-netlify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MiguelP4lacios/TS-microservices-netlify.git",
+  "author": "Miguel Palacios",
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/functions": "^0.7.2",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^6.9.0",
+    "typescript": "^4.4.3"
+  }
+}
