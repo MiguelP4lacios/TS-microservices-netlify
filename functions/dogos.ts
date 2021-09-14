@@ -10,7 +10,7 @@ const handler: Handler = async (event, context) => {
       statusCode: 200,
       body: JSON.stringify({
         dogs: {
-          images: data.slice(0, 10).map((url) => `https://random.dog/${url}`),
+          images: data.slice(0, 11).map((url) => `https://random.dog/${url}`),
         },
       }),
     };
